@@ -1,0 +1,91 @@
+
+.item2 { grid-area: imagen; }
+.item3 { grid-area: lunes; }
+.item4 { grid-area: martes; }
+.item5 { grid-area: miercoles; }
+.item6 { grid-area: jueves; }
+.item7 { grid-area: viernes; }
+.item8 { grid-area: sabado; }
+.item9 { grid-area: domingo; }
+
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'imagen imagen lunes lunes martes martes miercoles miercoles'
+    'jueves jueves viernes viernes sabado sabado domingo domingo ';
+  gap: 30px;
+  
+  
+}
+
+#img{
+   width: 100%;
+   height: 200px;
+}
+.check{
+   margin-right: 1ex;
+}
+.tarea {
+    border: none;
+}
+.secondcolum1 h3{
+    background-color: #f4eeee;
+}
+
+.contneido{
+    
+    border-bottom: 3px solid #e1e1e0;
+}
+
+
+.monday h3{
+    background-color: #f4eeee;
+}
+.secondcolum2 .tarea{
+    border: none;
+    height: 30px;
+    margin-bottom: 5px;
+}
+.plus{
+    width: 20px;
+    margin-bottom: 5px;
+}
+.grid-container {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+footer hr{
+    margin-bottom: 10px !important;
+    margin-top: 3rem;
+    border-top: 5px #E7D4B5 solid;
+    opacity: 1;
+}
+footer{
+    
+    text-align: center;
+}
+span img{
+    margin-right: 4px;
+}
+
+@media screen and (max-width: 430px) {
+    .grid-container {
+        margin-left: 0%;
+        margin-right: 0%;
+        display: grid;
+        grid-template-areas:
+            'imagen imagen lunes lunes'
+            'martes martes miercoles miercoles'
+            'jueves jueves viernes viernes'
+             'sabado sabado domingo domingo';
+        gap: 30px;
+    }
+    footer{
+        border-top: 4px solid #E7D4B5;
+        margin-top: 1rem;
+        padding-bottom: 5px;
+        text-align: center;
+        opacity: 1;
+    }
+}
